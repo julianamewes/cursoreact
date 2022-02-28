@@ -29,34 +29,50 @@ import { Component } from 'react';
   );
 }*/
 
-class App extends Component{
+class App extends Component {
   constructor(props) {
     super(props);
-//super() é pra chamara o constructor da clase component, já que a classe app extende a classe component
-    this.state = {}
+    //super() é pra chamar o constructor da clase component, já que a classe app extende a classe component
+    this.state = {
+      name: 'Juliana Mewes',
+      counter: 0
+    };
+  }
 
+  handlePClick = () => { //arrow fuction, não precisa delcarar o this fora.
+    this.setState({name: 'Morais'});
+  }
+
+  handleAClick = (event) => {
+    event.preventDefault(); //impede que seja feito o que seria realizado em handleAClick, e garante que será feito oq ue se pede abaixo
+    const {counter} = this.state;
+    this.setState({counter: counter + 1});
 
   }
-  render(){
+
+  //quando o estado mudar, a função render será chamada
+  render() {
+    const {name, counter} = this.state;
+
     return (
       <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Quero mostrar qualquer coisa aqui.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p onClick={this.handlePClick}>
+            {name} {counter}
+          </p>
+          <a
+            onClick={this.handleAClick}
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Este é o link
+          </a>
+        </header>
+      </div>
     )
-
   }
 }
 
