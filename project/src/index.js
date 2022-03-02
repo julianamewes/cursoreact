@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+
 import './styles/global-styles.css';
+
+import { Home } from './templates/Home';
 
 
 // react renderizando dentro do elemento root através do método ReactDOM
@@ -9,7 +11,7 @@ import './styles/global-styles.css';
 ReactDOM.render(
   // componentes do react (parâmetro da função "render")
   <React.StrictMode>
-    <App />
+    <Home />
   </React.StrictMode>,
   
   // um elemento do DOM
