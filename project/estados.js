@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Component } from 'react';
 
+// para estudar: https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
 class ContadorHora extends Component {
     constructor(props) {
       super(props);
