@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "debug": "^4.3.3"
+  },
+  "name": "cursoreact",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julianamewes/cursoreact.git"
+  },
+  "author": "julianamewes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julianamewes/cursoreact/issues"
+  },
+  "homepage": "https://github.com/julianamewes/cursoreact#readme"
+}
