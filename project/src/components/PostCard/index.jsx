@@ -15,3 +15,5 @@ export const PostCard = ({ title, body, cover, id }) => (
     </div>
   </div>
 );
+
+// o id junto com o título é apenas para identificar qual é o post
